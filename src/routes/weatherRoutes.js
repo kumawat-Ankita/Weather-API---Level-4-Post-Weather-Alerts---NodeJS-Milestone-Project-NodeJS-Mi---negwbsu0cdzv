@@ -45,10 +45,9 @@ router.post('/alerts', async (req, res) => {
     res.status(200).json({
         status: "success",
         message: "Weather alert saved successfully",
-        data:weatherData
       });
   }catch(err){
-    console.log(err)
+  
     res.status(404).json({
         status: "error",
         message: "Failed to save weather alert",
